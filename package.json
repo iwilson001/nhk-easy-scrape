@@ -1,0 +1,28 @@
+{
+  "name": "nhk-easy-scrape",
+  "version": "0.0.0",
+  "description": "scraper to get nhk easy news w/o furigana",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "dev:watch": "tsx src/index.ts --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scrape",
+    "cheerio",
+    "nhk",
+    "easy"
+  ],
+  "author": "Ian Wilson",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}
