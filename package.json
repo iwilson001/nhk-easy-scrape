@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "scraper to get nhk easy news w/o furigana",
   "main": "src/index.ts",
+  "type": "module",
   "scripts": {
     "dev": "tsx src/index.ts",
     "dev:watch": "tsx src/index.ts --watch",
