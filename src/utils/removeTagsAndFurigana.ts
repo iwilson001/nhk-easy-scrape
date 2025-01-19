@@ -1,6 +1,6 @@
 /**
  * Given a string of HTML, return the kanji characters found in the text. Strip out any furigana.
- * @param html
+ * @param html should look like: `<ruby>漢字<rt>かんじ</rt></ruby>`
  * @returns kanji characters found in the text
  */
 export const removeTagsAndFurigana = (html: string | null): string => {
