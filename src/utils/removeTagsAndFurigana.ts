@@ -6,7 +6,9 @@
 export const removeTagsAndFurigana = (html: string | null): string => {
   if (html === null) throw new Error('No HTML provided');
   if (typeof html !== 'string') throw new Error('HTML must be a string');
+
   if (html.length === 0) return '';
+  if (!html.includes('<ruby>')) return html;
 
   const cleanHtml = html
     .replaceAll(/[\n\s]+/g, '')
